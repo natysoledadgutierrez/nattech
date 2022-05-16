@@ -1,11 +1,13 @@
 import './App.css';
-import Newcomponent from './Newcomponent'
+import Navbar from './components/Navbar';
 
-function App() {
+
+const App = () => {
+  let coder = "Adelante!";
   return (
     <div className="App">
-      <Newcomponent></Newcomponent>     
-      <h1>Mi primera aplicación en ReactJs</h1>
+      <Navbar />
+      <h1>Mi primera aplicación en ReactJs. {coder} </h1>
     </div>
   );
 }

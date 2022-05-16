@@ -1,0 +1,26 @@
+header .navbar-dark .navbar-nav .nav-link:focus, header .navbar-dark .navbar-nav .nav-link:hover {
+    color: #10e3eb !important; }
+header .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 4rem;
+    padding-left: 1rem; }
+header .navbar {
+    width: 100%; }
+header .navbar-brand img {
+    width: 150px; }
+header .navbar-nav {
+    margin-left: 15%; }
+header .navbar .nav-link {
+    color: #c2c9cf; }
+header .input-group-text {
+    height: 100%; }
+header .carrito {
+    margin-top: auto;
+    margin-bottom: auto; }
+header .carrito i {
+    color: aliceblue; }
+header .navbar-brand img {
+    width: 150px; }
+header #cantidad-carrito {
+    color: white;
+    padding-left: 30%;
+}
