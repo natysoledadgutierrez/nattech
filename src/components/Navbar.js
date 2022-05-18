@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css';
 import logo from '../images/logo.png';
+import CartWidget from './CartWidget';
 
 const Navbar = () => { 
     return(
@@ -35,6 +36,7 @@ const Navbar = () => {
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
                         <button className="btn btn-outline-success" type="submit">Search</button>
                     </form>
+                        <CartWidget />
                     </div>
                 </div>
             </nav>

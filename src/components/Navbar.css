@@ -24,3 +24,6 @@ header #cantidad-carrito {
     color: white;
     padding-left: 30%;
 }
+.MuiBadge-root{
+    padding-left: 5px;
+}

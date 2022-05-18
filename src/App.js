@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import ItemListContainer from './components/ItemListContainer';
 
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <ItemListContainer />
       <h1>Mi primera aplicación en ReactJs. {coder} </h1>
     </div>
   );
