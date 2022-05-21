@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <ItemListContainer />
+      <ItemListContainer greeting='HOLA MUNDO!!!'/>
       <h1>Mi primera aplicación en ReactJs. {coder} </h1>
     </div>
   );
