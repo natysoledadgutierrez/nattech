@@ -1,3 +1,4 @@
+
 .itemCount{
     padding: 10px 20px;
     font-size: 30px;
@@ -5,3 +6,18 @@
     align-items: center;
     justify-content: space-between;
 }
+.ProductAmountContainer{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(245, 17, 203);
+};
+
+.ProductAmount{
+    font-size: 24px;
+    margin: 5px;
+
+}
+
+

@@ -1,5 +1,5 @@
 import './ItemListContainer.css';
-import './ItemCount';
+import ItemCount from './ItemCount';
 
 const ItemListContainer = (props) => {
     const onAdd = (qty) => {
@@ -7,7 +7,7 @@ const ItemListContainer = (props) => {
     }
     return (
     <div>
-        <div className="itemListContainer"> {props.greeting} </div>
+        <div className="ItemListContainer"> {props.greeting} </div>
         <ItemCount stock={5} initial={1} onAdd={onAdd}/>
     </div>
     );
