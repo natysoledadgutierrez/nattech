@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer';
-import ItemCount from './components/ItemCount';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 
 const App = () => {
@@ -9,8 +9,9 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
-      <ItemListContainer greeting='HOLA MUNDO!!!'/>
       <h1>Mi primera aplicación en ReactJs. {coder} </h1>
+      {/* <ItemListContainer greeting='HOLA MUNDO!!!'/> */}
+      <ItemDetailContainer />
     </div>
   );
 }

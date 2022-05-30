@@ -1,5 +1,4 @@
 import './ItemListContainer.css';
-import ItemCount from './ItemCount';
 import ItemList from './ItemList';
 import CustomFetch from '../utils/CustomFetch'
 import { useEffect, useState } from 'react';
@@ -14,14 +13,9 @@ const ItemListContainer = (props) => {
             .catch(err => console.log(err))
     }, []);
 
-
-    const onAdd = (qty) => {
-        alert("You have selected " + qty + " items.");
-    }
     return (
             <div>
                 <div className="ItemListContainer"> {props.greeting} </div>
-                <ItemCount stock={5} initial={1} onAdd={onAdd}/>
                 <ItemList items={datos} /> 
             </div>
         );
