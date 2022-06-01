@@ -14,7 +14,7 @@ const productos = [
     { id: '6', nombre: 'Teclado gamer Redragon Brahma K586-PRO QWERTY Outemu Blue inglés US color negro con luz RGB', categoria: 2,
     precio: 10258, stock: 2, cuotas: 12, interes: 0, envioGratis: true, esOferta: false, imagen:"teclado3.jpg" },
     auricularCloud,
-    { id: '8', nombre: 'Auriculares gamer inalámbricos Logitech G Series G935 negro y azul con luz rgb LED', categoria: 3,
+    { id: '8', nombre: 'Auriculares gamer inalámbricos Logitech G Series G935 negro y azul con luz rgb LED', categoria:3,
     precio: 18999, stock: 4, cuotas: 12, interes: 0, envioGratis: true, esOferta: false, imagen:"auricular2.jpg" },
     { id: '9', nombre: 'Auriculares gamer inalámbricos Astro A50 negro y gris', categoria: 3,
     precio: 30291, stock: 10, cuotas: 12, interes: 0, envioGratis: true, esOferta: false, imagen:"auricular3.jpg" },

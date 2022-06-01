@@ -1,19 +1,19 @@
 import "./Navbar.css";
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import logo from '../images/logo.png';
+import CartWidget from './CartWidget';
+import  NavDropdown  from "react-bootstrap/NavDropdown";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="../index.html">
-                        <img
-                            src={logo}
-                            alt="Haz clic aquí para volver a la página de inicio"
-                        />
-                    </a>
+                <Link to="/">
+                    <img src={logo} />
+                </Link> 
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -33,66 +33,47 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#0">
+                            <Link to="/" className="nav-link" aria-current="page">
                                     Oferta
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#">
-                                    Productos
-                                </a>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <Link to="/category/3" className="nav-link" aria-current="page">
-                                            Auricular
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Disco externo
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Fuente
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Gabinete
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Monitor
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Mouse
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Pendrive
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a className="dropdown-item" href="#">
-                                            Teclado
-                                        </a>
-                                    </li>
-                                </ul>
+                            <NavDropdown title="Productos" menuVariant="dark">
+                                <Link to="/category/1" className="dropdown-item">
+                                    Monitores
+                                </Link>
+                                <Link to="/category/2"  className="dropdown-item">
+                                    Teclados
+                                </Link>
+                                <Link to="/category/3" className="dropdown-item">
+                                    Auriculares
+                                </Link>
+                                <Link to="/category/4" className="dropdown-item">
+                                    Mouses
+                                </Link>
+                                <Link to="/category/5" className="dropdown-item">
+                                    Pendrives
+                                </Link>
+                                <Link to="/category/6" className="dropdown-item">
+                                    Gabinetes
+                                </Link>
+                                <Link to="/category/7" className="dropdown-item">
+                                    Fuentes
+                                </Link>
+                                <Link to="/category/8" className="dropdown-item">
+                                    Discos externos
+                                </Link>
+                            </NavDropdown>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#0">
+                            <Link to="/" className="nav-link" aria-current="page">
                                     Galería
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#0">
+                            <Link to="/" className="nav-link" aria-current="page">
                                     Contacto
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <form className="d-flex">

@@ -9,10 +9,10 @@ const ItemDetailContainer = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        CustomFetch(2000, productos.find(item => item.id === id))
+        CustomFetch(100, productos.find(item => item.id === id))
             .then(result => setDato(result))
             .catch(err => console.log(err))
-    }, []);
+    }, [id]);
 
     return (
                 <ItemDetail item={dato} /> 

@@ -12,14 +12,13 @@ const ItemListContainer = (props) => {
     let productosMostrar = id === undefined ? productos : productos.filter(item => item.categoria === parseInt(id));
 
     useEffect(() => {
-        CustomFetch(2000, productosMostrar)
+        CustomFetch(100, productosMostrar)
             .then(result => setDatos(result))
             .catch(err => console.log(err))
-    }, []);
+    }, [datos, id]);
 
     return (
             <div>
-                <div className="ItemListContainer"> {props.greeting} </div>
                 <ItemList items={datos} /> 
             </div>
         );
