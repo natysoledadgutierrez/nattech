@@ -33,7 +33,6 @@ const ItemDetail = ({ item }) => {
                                 </div>
                                 <div className="d-flex justify-content-between total font-weight-bold mt-4">
                                 <ItemCount stock={3} initial={1} onAdd={onAdd}/>
-                                
                                 </div>
                             </div>
                             </div>
