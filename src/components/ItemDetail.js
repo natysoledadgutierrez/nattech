@@ -1,9 +1,15 @@
 import ItemCount from './ItemCount';
+import { useState } from 'react';
+import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+
 
 const ItemDetail = ({ item }) => {
+    const [itemCount, setItemCount] = useState(0);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
+        setItemCount(qty);
     }
     
     let cuota = item.precio / item.cuotas;
@@ -32,7 +38,11 @@ const ItemDetail = ({ item }) => {
                                     <span>{item.cuotas} x ${((cuota * item.interes) / 100) + cuota}</span>
                                 </div>
                                 <div className="d-flex justify-content-between total font-weight-bold mt-4">
-                                <ItemCount stock={3} initial={1} onAdd={onAdd}/>
+                                {
+                                     itemCount === 0
+                                         ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
+                                         : <Link to='/cart'><Button variant="contained" color="secondary">CheckOut</Button></Link>
+                                }
                                 </div>
                             </div>
                             </div>
