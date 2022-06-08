@@ -1,15 +1,18 @@
 import ItemCount from './ItemCount';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import { CartContext } from './CartContext';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
+    const contexto = useContext (CartContext);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
         setItemCount(qty);
+        contexto.addToCart(item, qty);
     }
     
     let cuota = item.precio / item.cuotas;
