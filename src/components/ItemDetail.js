@@ -3,7 +3,7 @@ import { useState, useContext } from 'react';
 import { CartContext } from './CartContext';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-
+import FormatNumber from '../utils/FormatNumber';
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
@@ -34,11 +34,11 @@ const ItemDetail = ({ item }) => {
                                 <h5 className="card-title">{item.nombre}</h5>
                                 </div>
                                 <div className="d-flex justify-content-between">
-                                    <span>Precio</span><span>${item.precio}</span>
+                                    <span>Precio</span><span>{FormatNumber(item.precio)}</span>
                                 </div>
                                 <div className="d-flex justify-content-between">
                                     <span>{item.interes == 0 ? "Cuotas sin interés" : ""}</span>
-                                    <span>{item.cuotas} x ${((cuota * item.interes) / 100) + cuota}</span>
+                                    <span>{item.cuotas} x {FormatNumber(((cuota * item.interes) / 100) + cuota)}</span>
                                 </div>
                                 <div className="d-flex justify-content-between total font-weight-bold mt-4">
                                 {

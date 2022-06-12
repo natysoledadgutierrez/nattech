@@ -1,5 +1,6 @@
 import  './Item.css';
 import { Link } from 'react-router-dom';
+import FormatNumber from '../utils/FormatNumber';
 
 const Item = ({ id, nombre, stock, precio, imagen }) => {
     return (
@@ -10,7 +11,7 @@ const Item = ({ id, nombre, stock, precio, imagen }) => {
             <img src={require("../images/" + imagen)} className="card-img-top producto-zoom" alt={nombre}/>
             <div className="card-body">
                 <p className="card-text">{nombre}</p>
-                <div className="precios"> $ {precio}</div>
+                <div className="precios"> {FormatNumber(precio)}</div>
                 <Link to={`/item/${id}`}>
                     <button className="btn btn-primary">Agregar al carrito</button>
                 </Link>

@@ -1,5 +1,5 @@
 import ItemDetail from './ItemDetail';
-import CustomFetch from '../utils/CustomFetch'
+import CustomFetch from '../utils/CustomFetch';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 const { productos } = require('../utils/Productos');
