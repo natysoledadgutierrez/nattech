@@ -44,6 +44,7 @@ const Cart = () => {
                                 <td>{FormatNumber(estado.calcTotal())}</td>
                             </tr>
                         </tbody>
+                        <button className="btn btn-secondary">CHECKOUT NOW</button>
                     </Table>
             }
         </>

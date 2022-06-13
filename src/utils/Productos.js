@@ -32,7 +32,7 @@ const productos = [
     precio: 10799, stock: 2, cuotas: 6, interes: 0, envioGratis: true, esOferta: false, imagen:"gabinete3.jpg" },
     { id: '16', nombre: 'Fuente de alimentación para PC Noga ATX-550 P4 550W negra 200V', categoria: 7,
     precio: 1429, stock: 2, cuotas: 0, interes: 0, envioGratis: true, esOferta: false, imagen:"fuente1.jpg" },
-    { id: '17', nombre: 'Fuente de alimentación para PC Noga RGB Power ATX-700 RGB 700W negra 200V - 240V', 
+    { id: '17', nombre: 'Fuente de alimentación para PC Noga RGB Power ATX-700 RGB 700W negra 200V - 240V', categoria: 7, 
     precio: 5529, stock: 2, cuotas: 12, interes: 10, envioGratis: true, esOferta: false, imagen:"fuente2.jpg" },
     { id: '18', nombre: 'Fuente de alimentación para PC Thermaltake Technology TR2 Series TR2-500NL2NC 500W black 115V/230V', categoria: 7,
     precio: 8199, stock: 2, cuotas: 12, interes: 0, envioGratis: true, esOferta: false, imagen:"fuente3.jpg" },
